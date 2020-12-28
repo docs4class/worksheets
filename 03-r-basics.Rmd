@@ -16,7 +16,7 @@ Go into the Console, where we interact with the live R process.
 
 Make an assignment and then inspect the object you just created:
 
-```{r start_rbasics}
+```{r}
 x <- 3 * 4
 x
 ```
@@ -266,7 +266,4 @@ For the record, when loading data into R and/or writing outputs to file, you can
 
 ```{r end_rbasics, include = FALSE}
 file.remove(c("avg_x.txt", "toy_line_plot.pdf"))
-```
-
-```{r links, child="links.md"}
 ```

@@ -7,14 +7,15 @@ output: html_document
 knitr::include_graphics(rep("images/pclogo.png", 3))
 ```
 
-# Why your life is about to change.
+# Is your life is about to change?  Yes.  YES.
 Let's chat.
 
 # Overview {#overview}
 
-## Where does this course fit in a curriculum?
+## Where does this course fit in the big picture?
 
-This course can serves as a first course in an undergraduate analytics very similar to data science) and highly related to statistics.
+This course can serves as a first course in an undergraduate analytics very similar to data science) and highly related to statistics. More importantly my hope is that this course is *a gateway to an appreciation of what data can do to change the (your!) world*.
+
 ## Why R?
 
 Unlike most other software designed specifically for teaching statistics, R is free and open source, powerful, flexible, and relevant beyond the introductory statistics classroom.
