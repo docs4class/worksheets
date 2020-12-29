@@ -4,7 +4,7 @@ author: "Rollin 'T"
 output: html_document
 ---
 ```{r, echo=F}
-knitr::include_graphics(rep("images/pclogo.png", 3))
+knitr::include_graphics(rep("images/pclogo.png", 1))
 ```
 
 ```{r load-pkg, message = FALSE}
@@ -24,9 +24,7 @@ hotels <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesda
 Warm up!
 Take a look at an overview of the data with the `skim()` function.
 
-**Note:** I already gave you the answer to this exercise.
-You just need to knit the document and view the output.
-A definition of all variables is given in the [Data dictionary] section at the end, though you don't need to familiarize yourself with all variables in order to work through these exercises.
+A definition of all variables is given in the [Data dictionary] section at the end, though you don't need to familiarize yourself with all variables in order to work through these exercises.  But understanding your data always helps.
 
 
 

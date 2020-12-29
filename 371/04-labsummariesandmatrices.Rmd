@@ -154,7 +154,7 @@ the integer for either dimension implies that every element in that dimension is
 ### Exercises
 
 
-1. Create in R this matrix
+1. Create this matrix in R
 ```{r, echo = FALSE}
 x <-matrix(c(1,7,8,11,-5,3,8,6,3,-9,0,11,14, 14, 14),nrow=3,byrow=T)
 x
@@ -172,16 +172,13 @@ y
 (c) y%*%x
 (d) x%*%y
 (e) t(y)
-(f ) solve(x)
+(f) solve(x)
 ```{r,echo = FALSE}
 x <-matrix(c(1,7,8,11,5,9),nrow=3,byrow=T)
 y <-matrix(c(6,8,2,1,1,-7),nrow=3,byrow=T)
 2*x
 x*x
-y%*%x
-x%*%y
 t(y)
-solve(x)
 ```
 
 4. With x and y as above, calculate the effect of the following subscript operations and check

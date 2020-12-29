@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+>dplyr Practice Problems
+
+Using the nycflights13 dataset and the dplyr package, answer these questions.  Some answers are given in square brackets for you to check your answers.
+
+1.	How many flights in Sept were late departing flights? [7815]
+2.	How many flights in Sept were late departing flights that originated at JFK airport? [2649]
+3.	How many flights in Sept were late departing flights with an origin of JFK airport and had an destination of anywhere except MIA? [2572]
+4.	Which carrier had the most flights in this data set?  [UA with 58665]
+5.	Which destination had the most flights in this data set? [ORD with 17283]
+6.	Which destination had the most flights with departure delays of greater than 60 minutes in this data set? [ORD with 1480]
+7.	What was the longest arrival delay in this dataset? [1272]
+8.	Which carrier in September had the most late departing flights? [UA with 1559]
+9.	Create a variable called total.annoyance which arrival delay plus the departure delay for each flight.
+10.	Which carrier with more than 10 flights in September had greatest % late departing flights?
+

@@ -64,23 +64,31 @@ the install_github() function. The GitHub repository will usually contain the la
 the package and the development version.
 To install from CRAN, just run
 
-> install.packages("dplyr")
-
+```{r, eval=FALSE}
+library(dplyr)
+```
 After installing the package it is important that you load it into your R session with the library()
 function.
-> library(dplyr)
-Attaching package: 'dplyr'
+```{r, eval=FALSE}
+library(dplyr)
+```
+
+```{r, eval=FALSE}
 The following object is masked from 'package:stats':
 filter
 The following objects are masked from 'package:base':
 intersect, setdiff, setequal, union
-You may get some warnings when the package is loaded because there are functions in the dplyr
-package that have the same name as functions in other packages. For now you can ignore the
+```
+
+
+You may get some warnings when the package is loaded because there are functions in the dplyr package that have the same name as functions in other packages. For now you can ignore the
 warnings.
 
-select()
+## select()
 For the examples in this chapter we will be using a dataset containing air pollution and temperature data for the city of Chicago⁵³ in the U.S. The dataset is available from my web site.
 After unzipping the archive, you can load the data into R using the readRDS() function.
+
+
 > chicago <- readRDS("chicago.rds")
 You can see some basic characteristics of the dataset with the dim() and str() functions.
 
