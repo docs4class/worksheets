@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Data Wrangling Practice Problems"
 output: html_document
 ---
 
@@ -7,9 +7,15 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
->dplyr Practice Problems
+>`dplyr` Practice Problems
 
-Using the nycflights13 dataset and the dplyr package, answer these questions.  Some answers are given in square brackets for you to check your answers.
+
+```{r eval = FALSE}
+install.packages("nycflights13")
+```
+
+
+Using the `nycflights13` package and the `flights` dataset use the `dplyr` package to answer these questions.  Some answers are given in square brackets for you to check your answers.
 
 1.	How many flights in Sept were late departing flights? [7815]
 2.	How many flights in Sept were late departing flights that originated at JFK airport? [2649]
@@ -22,3 +28,26 @@ Using the nycflights13 dataset and the dplyr package, answer these questions.  S
 9.	Create a variable called total.annoyance which arrival delay plus the departure delay for each flight.
 10.	Which carrier with more than 10 flights in September had greatest % late departing flights?
 
+> `storms` 
+
+Open the `storms` data from the `dplyr` package.  Use ?storms to understand the data.  Then answer:
+
+1. How many observations have both wind speeds of greater than 20 knots and air pressure of more 1010 millibars? 
+2. How many observations have the storm name of Ana, Ernesto, Ophelia or Isidore? 
+3. What is the average wind speed for each category of storm? 
+4. For category 4 and 5 storms (combined) what is the average pressure? 
+5. Create a variable called strength which is pressure divided by wind speed.  What is the maximum strength in this data set? 
+6. Which storm has the most observations?
+7. Which category 5 storm(s) have the greatest average wind speed? 
+
+> More, better dplyr (data wrangling)
+
+Please use the `starwars` dataset from the `dplyr` package to answer the following questions:
+
+1. Which species has the most individuals included in this data set?
+2. Which species has the tallest individuals on average?
+3. What is the tallest individual for each species?
+4. Calculate the BMI for each individual and determine which individual has the highest BMI.  Use the formula `bmi = mass/((height/100)^2)` to calculate bmi.
+5. Which homeworld has the most individuals included in this data set?
+6. Which homeworld has the tallest individuals on average?
+7. What is the tallest individual for each eye color?
