@@ -1,5 +1,5 @@
 ---
-title: 'Lab 11: Tidyverse II: Tidyr and Advanced Dplyr'
+title: "Lab 11: Tidyverse II: Tidyr and Advanced Dplyr"
 author: "Statistical Computing, 36-350"
 date: "Week of Monday November 5, 2018"
 ---

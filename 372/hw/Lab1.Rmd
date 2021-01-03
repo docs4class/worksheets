@@ -1,6 +1,9 @@
 ---
-title: "HW 01 - Airbnb listings in Edinburgh"
+title: "HW 01 - Data Visualization with `ggpplot2`"
 ---
+
+## Airbnb listings in Edinburgh
+
 
 Recent development in Edinburgh regarding the growth of Airbnb and its impact on the housing market means a better understanding of the Airbnb listings is needed. Using data provided by Airbnb, we can explore how Airbnb availability and prices vary by neighborhood.
 
@@ -76,4 +79,15 @@ ggplot(data = edibnb, mapping = aes(x = price)) +
 
 5. Create another informative visualization of your choosing.  Be prepared to share it with the class -- although the visualization should need no explaining!
 
+## Instructional staff employment trends
+
+The next dataset is about instructional staff employee hiring trends between 1975 and 2011. 
+The dataset is called `instructors`. You can find descriptions of each of the variables in the help file for the dataset, which you can access by running `?instructors` in your Console.
+
+The American Association of University Professors (AAUP) is a nonprofit membership association of faculty and other academic professionals. [This report](https://www.aaup.org/sites/default/files/files/AAUP_Report_InstrStaff-75-11_apr2013.pdf) compiled by the AAUP shows trends in instructional staff employees between 1975 and 2011, and contains an image very similar to the one given below.
+
+6. Recreate a graph similar to the one above.
+
+7. Discuss how you would improve upon this visualization if the main objective was to communicate that the proportion of part-time faculty have gone up over time compared to 
+other instructional staff types.Implement the improvements and provide your improved visualization as part of your answer. Also write a few sentences about why you chose to make these improvements and how they address the main goal stated above. 
 

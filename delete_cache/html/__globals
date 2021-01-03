@@ -1,0 +1,10 @@
+unnamed-chunk-2	::	>	library
+unnamed-chunk-3	read.table
+unnamed-chunk-4	read.table
+unnamed-chunk-5	$	$<-	[[	[<-	^	==	as.character	as.numeric	head	if	nchar	paste0	sapply	strsplit
+unnamed-chunk-6	read.table
+unnamed-chunk-7	%>%	Gender	group_by	nest	sprint.best.full.df
+unnamed-chunk-8	$	::	~	lapply	lm	nested.df
+unnamed-chunk-9	%>%	~	data	lm	map	mutate
+unnamed-chunk-10	%>%	::	map	mutate	sum
+unnamed-chunk-11	%>%	Gender	nested.df	select	sum2	unnest

@@ -1,26 +1,12 @@
 ---
-title: 'Lab 11: Tidyverse II: Tidyr and Advanced Dplyr'
-author: "Statistical Computing, 36-350"
-date: "Week of Monday November 5, 2018"
+title: 'Lab 3 - Relational Data (joins), strings and dates'
 ---
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(cache=TRUE, autodep=TRUE, cache.comments=TRUE)
 ```
 
-Name:  
-Andrew ID:  
-Collaborated with:  
-
-This lab is to be done in class (completed outside of class if need be). You can collaborate with your classmates, but you must identify their names above, and you must submit **your own** lab as an knitted HTML file on Canvas, by Sunday 11:59pm, this week. Make sure to complete your weekly **check-in** (which can be done by coming to lecture, recitation, lab, or any office hour), as this will count a small number of points towards your lab score.
-
-**This week's agenda**: practicing grouping, pivoting wider and longer, and joins.
-
-```{r message = F, warning = F}
-# Load the tidyverse!
-library(tidyverse)
-assertthat::assert_that(utils::packageVersion("tidyr") > "0.8.99") 
-```
+**This week's lab**: practicing grouping, pivoting wider and longer, and joins.
 
 Practice with grouping
 ===
