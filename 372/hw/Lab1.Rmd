@@ -1,5 +1,6 @@
 ---
 title: "HW 01 - Data Visualization with `ggpplot2`"
+output: pdf_document
 ---
 
 ## Airbnb listings in Edinburgh

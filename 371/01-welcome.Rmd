@@ -3,10 +3,6 @@ title: "01-Welcome to BADM 371."
 output: html_document
 ---
 
-```{r, echo=F}
-knitr::include_graphics(rep("images/pclogo.png", 3))
-```
-
 # Is your life is about to change?  Yes.  YES.
 Let's chat.
 
