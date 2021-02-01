@@ -1,7 +1,4 @@
 # Get your R act together & Tools of the Trade
-```{r, echo=F}
-knitr::include_graphics(rep("images/pclogo.png", 3))
-```
 
 # Install R and RStudio 
 
