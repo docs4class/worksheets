@@ -1,11 +1,13 @@
 ---
-title: "Cumulative deaths from COVID-19"
+title: "Lab 2: Cumulative deaths from COVID-19"
 output: html_document
 ---
 
 ## Introduction
 
-Countries around the world are responding to an outbreak of respiratory illness caused by a novel coronavirus, COVID-19.
+In this lab we work with visualization, data wrangling, and dates.  Yeah!  Analytics 2 is *SO MUCH FUN!*
+
+As you know, countries around the world are responding to an outbreak of respiratory illness caused by a novel coronavirus, COVID-19.
 The outbreak first started in Wuhan, China, but cases have been identified in a growing number of other locations internationally, including the United States.
 In this report we explore how the trajectory of the cumulative deaths in a number of countries.
 
@@ -138,6 +140,13 @@ ggplot(data = country_data,
     caption = "Source: github.com/RamiKrispin/coronavirus"
   )
 ```
+
+## Your assignment
+
+1. Select these countries to study:   "China", "France", "United Kingdom", "US", and "Turkey" and try to dupliate or improve upon the figure above.
+
+2. Make an additional visualization that shows these countries' cumulative death toll stating with February 1, 2020. 
+3. Make some sort of informative, well-formatted table.  One example is below though yours can be quite different.
 
 ## Appendix
 
