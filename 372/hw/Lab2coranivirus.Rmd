@@ -13,7 +13,9 @@ The data come from the **coronavirus** package, which pulls data from the Johns 
 The coronavirus package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 The package is available on GitHub [here](https://github.com/RamiKrispin/coronavirus) and is updated daily.
 
-For our analysis, in addition to the coronavirus package, we will use the following packages for data wrangling and visualisation.
+> For your ease of use, I have placed data on brightspace that you may use for this assignent, but you can grab more current data from the source above, if you like.
+
+For our analysis, in addition to the coronavirus package, I may* use the following packages for data wrangling and visualization. You are only required to use `tidyverse` for data wrangling and visualization and package `lubridate` for handling dates
 
 -   **tidyverse** for data wrangling and visualization
 -   **lubridate** package for handling dates
@@ -21,7 +23,7 @@ For our analysis, in addition to the coronavirus package, we will use the follow
 -   **scales** package for formatting axis labels
 -   **ggrepel** package for pretty printing of country labels
 
-We will make use of the **DT** package for interactive display of tabular output in the Appendix.
+I make use of the **DT** package for interactive display of tabular output in the Appendix, but you may use another way to display your results.
 
 ```{r load-packages, warning=FALSE, message=FALSE}
 library(coronavirus) # devtools::install_github("RamiKrispin/coronavirus")
@@ -43,7 +45,9 @@ For this report, we will focus on the deaths.
 
 We will start by making our selection for the countries we want to explore.
 
-```{r select-countries}
+1. Select these countries to study:   "China", "France", "United Kingdom", "US", and "Turkey"
+
+```{r select-countries, echo=FALSE}
 countries <- c(
   "China",
   "France",
@@ -56,7 +60,7 @@ countries <- c(
 In the following code chunk we filter the data frame for deaths in the countries we specified above and calculate cumulative number of deaths.
 We will only visualise data since 10th confirmed death.
 
-```{r prep-country-data}
+```{r prep-country-data, echo=FALSE, warning=FALSE, message=FALSE}
 country_data <- coronavirus %>%
   # filter for deaths in countries of interest
   filter(
@@ -91,7 +95,7 @@ country_data <- coronavirus %>%
 
 We also need to take a note of the "as of date" for the data so that we can properly label our visualisation.
 
-```{r record-as-of-date}
+```{r record-as-of-date, echo=FALSE}
 as_of_date <- country_data %>% 
   summarise(max(date)) %>% 
   pull()
@@ -105,7 +109,7 @@ These data are as of `r as_of_date_formatted`.
 The following visualisation shows the number of cumulative cases vs. days elapsed since the 10th confirmed death in each country.
 The time span plotted for each country varies since some countries started seeing (and reporting) deaths from COVID-19 much later than others.
 
-```{r visualise, warning=FALSE}
+```{r visualise, warning=FALSE, echo=FALSE}
 ggplot(data = country_data,
        mapping = aes(x = days_elapsed, 
                      y = cumulative_cases, 
